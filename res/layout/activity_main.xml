@@ -8,9 +8,28 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <TextView
+    <Button
+        android:id="@+id/btnStartActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Start New Activity" />
+
+    <Button
+        android:id="@+id/btnStartActivityForResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnStartActivity"
+        android:layout_centerHorizontal="true"
+        android:text="Start Activity For Result" />
+
+    <Button
+        android:id="@+id/btnStartIntent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnStartActivityForResult"
+        android:layout_centerHorizontal="true"
+        android:text="Send E-Mail" />
 
 </RelativeLayout>
